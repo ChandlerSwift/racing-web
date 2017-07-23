@@ -19,7 +19,6 @@ class CreateVehiclesTable extends Migration
             $table->string('name');
             // possible future expansion: $table->integer('owner_id')->nullable();
             $table->text('description');
-            $table->text('earth_url');
         });
     }
 
