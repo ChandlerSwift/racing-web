@@ -19,6 +19,7 @@ class CreateTracksTable extends Migration
             $table->string('name');
             // possible future expansion: $table->integer('owner_id')->nullable();
             $table->text('description');
+            $table->integer('length_mm')->nullable();
         });
     }
 
