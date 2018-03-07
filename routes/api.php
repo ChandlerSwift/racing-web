@@ -28,3 +28,7 @@ Route::get('/tracks', function() {
 Route::get('/vehicles', function() {
     return \App\Vehicle::all();
 });
+
+Route::get('/races', function() {
+    return \App\Race::all();
+});
