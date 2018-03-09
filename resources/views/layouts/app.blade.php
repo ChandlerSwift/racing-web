@@ -13,8 +13,12 @@
     {{-- TODO: non-hardcoded links --}}
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
-    <link href="/css/sb-admin-2.min.css" rel="stylesheet">
     <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link href="/vendor/datatables-plugins/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+
+    <link href="/css/sb-admin-2.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -54,6 +58,18 @@
     <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="/vendor/metisMenu/metisMenu.min.js"></script>
     <script src="/js/sb-admin-2.min.js"></script>
+
+    <script src="/vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="/vendor/datatables/js/dataTables.bootstrap.min.js"></script>
+    <script src="/vendor/datatables-responsive/dataTables.responsive.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        $('.race-table').DataTable({
+            responsive: true
+        });
+    });
+    </script>
 
 </body>
 

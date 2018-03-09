@@ -1,4 +1,4 @@
-<table class="race-table">
+<table width="100%" class="table table-striped table-bordered table-hover race-table">
     <thead>
         <tr>
             <th>Driver</th>
@@ -14,7 +14,7 @@
             <td>{{ $race->user->name }}</td>
             <td>{{ $race->vehicle->name }}</td>
             <td>{{ $race->track->name }}</td>
-            <td>{{ $race->time }}</td>
+            <td>{{ $race->time_ms / 1000 }}</td>
         </tr>
         @endforeach
     </tbody>
