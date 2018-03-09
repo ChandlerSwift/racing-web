@@ -1,4 +1,4 @@
-<table width="100%" class="table table-striped table-bordered table-hover race-table">
+<table width="100%" class="table table-striped table-bordered race-datatable">
     <thead>
         <tr>
             <th>Driver</th>

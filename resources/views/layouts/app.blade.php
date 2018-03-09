@@ -15,7 +15,7 @@
     <link href="/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
     <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <link href="/vendor/datatables-plugins/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/datatables/css/dataTables.bootstrap.min.css" rel="stylesheet">
     <link href="/vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
 
     <link href="/css/sb-admin-2.min.css" rel="stylesheet">
@@ -65,7 +65,7 @@
 
     <script>
     $(document).ready(function() {
-        $('.race-table').DataTable({
+        $('.race-datatable').DataTable({
             responsive: true
         });
     });
