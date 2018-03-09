@@ -1,4 +1,8 @@
+@if($normal_table)
+<table width="100%" class="table table-striped table-bordered">
+@else {{-- DataTable --}}
 <table width="100%" class="table table-striped table-bordered race-datatable">
+@endif
     <thead>
         <tr>
             <th>Driver</th>
