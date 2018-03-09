@@ -18,11 +18,15 @@
                 <tbody>
                     @foreach($users as $user)
                     <tr>
-                        <td>{{ $user->name }}</td>
+                        <td>
+                            <a href="{{ url("/users/{$user->id}") }}">
+                                {{ $user->name }}
+                            </a>
+                        </td>
                         <td>{{ $user->created_at->toFormattedDateString() }}</td>
                         <td>{{ $user->races->count() }}</td>
-                        <td>{{ $user->races->sortBy('time_ms')->first()->time_ms / 1000 }}</td>
-                        <td>TODO</td>
+                        <td>{{ number_format($user->races->sortBy('time_ms')->first()->time_ms / 1000, 3, '.', '') }}</td>
+                        <td>{{ number_format($user->races->avg('time_ms') / 1000, 3, '.', '') }}</td>
                         <td>TODO</td>
                     </tr>
                     @endforeach

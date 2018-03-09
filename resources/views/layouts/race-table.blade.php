@@ -18,7 +18,7 @@
             <td>{{ $race->user->name }}</td>
             <td>{{ $race->vehicle->name }}</td>
             <td>{{ $race->track->name }}</td>
-            <td>{{ $race->time_ms / 1000 }}</td>
+            <td>{{ number_format($race->time_ms / 1000, 3, '.', '') }}</td>
         </tr>
         @endforeach
     </tbody>
