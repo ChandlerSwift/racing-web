@@ -19,7 +19,7 @@
                 <a href="/"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Times by Track<span class="fa arrow"></span></a>
+                <a href="#"><i class="fa fa-road fa-fw"></i> Times by Track<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     @foreach(\App\Track::all() as $track)
                     <li>
@@ -29,7 +29,7 @@
                 </ul>
             </li>
             <li>
-                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Times by Vehicle<span class="fa arrow"></span></a>
+                <a href="#"><i class="fa fa-motorcycle fa-fw"></i> Times by Vehicle<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     @foreach(\App\Vehicle::all() as $vehicle)
                     <li>
