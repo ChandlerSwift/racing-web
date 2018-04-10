@@ -20,3 +20,5 @@ Route::get('/users/{user}', 'UserController@show');
 Route::get('/users/search/{query}', 'UserController@search');
 Route::delete('/users/{user}', 'UserController@destroy');
 
+Route::get('/tracks', 'TrackController@index');
+Route::get('/tracks/{track}', 'TrackController@show');

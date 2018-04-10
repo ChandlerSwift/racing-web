@@ -14,7 +14,8 @@ class TrackController extends Controller
      */
     public function index()
     {
-        //
+        $tracks = Track::all();
+        return view('track.list', compact('tracks'));
     }
 
     /**
@@ -24,7 +25,7 @@ class TrackController extends Controller
      */
     public function create()
     {
-        //
+        // TODO
     }
 
     /**
@@ -35,7 +36,7 @@ class TrackController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // TODO
     }
 
     /**
@@ -46,7 +47,7 @@ class TrackController extends Controller
      */
     public function show(Track $track)
     {
-        //
+        return view('track.show', compact('track'));
     }
 
     /**
@@ -57,7 +58,7 @@ class TrackController extends Controller
      */
     public function edit(Track $track)
     {
-        //
+        // TODO
     }
 
     /**
@@ -69,7 +70,7 @@ class TrackController extends Controller
      */
     public function update(Request $request, Track $track)
     {
-        //
+        // TODO
     }
 
     /**
@@ -80,6 +81,6 @@ class TrackController extends Controller
      */
     public function destroy(Track $track)
     {
-        //
+        // TODO
     }
 }
