@@ -2,15 +2,17 @@
     <div class="sidebar-nav navbar-collapse">
         <ul class="nav" id="side-menu">
             <li class="sidebar-search">
-                <div class="input-group custom-search-form">
-                    {{-- TODO --}}
-                    <input type="text" class="form-control" placeholder="Search Users&hellip;">
-                    <span class="input-group-btn">
-                        <button class="btn btn-default" type="button">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </span>
-                </div>
+                <form onsubmit="window.location='/users/search/'+document.getElementById('search-box').value; return false;">
+                    <div class="input-group custom-search-form">
+                        <input id="search-box" type="text" name="name" class="form-control" placeholder="Search Users&hellip;">
+                        {{ csrf_field() }}
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
                 <!-- /input-group -->
             </li>
             <li>

@@ -41,8 +41,8 @@ class UserController extends Controller
      */
     public function search($query)
     {
-        $users = User::where('name', 'like', $query)->get();
-        return view('user.search', compact('users'));
+        $users = User::where('name', 'like', '%'.$query.'%')->get();
+        return view('user.search', compact('users', 'query'));
     }
 
     /**
