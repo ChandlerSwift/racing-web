@@ -25,9 +25,13 @@
                         </td>
                         <td>{{ $user->created_at->toFormattedDateString() }}</td>
                         <td>{{ $user->races->count() }}</td>
+                        @if($user->races->count() > 0)
                         <td>{{ number_format($user->races->sortBy('time_ms')->first()->time_ms / 1000, 3, '.', '') }}</td>
                         <td>{{ number_format($user->races->avg('time_ms') / 1000, 3, '.', '') }}</td>
                         <td>TODO</td>
+                        @else
+                        <td colspan="3" style="text-align:center;">---</td>
+                        @endif
                     </tr>
                     @endforeach
                 </tbody>
