@@ -14,7 +14,8 @@ class VehicleController extends Controller
      */
     public function index()
     {
-        //
+        $vehicles = Vehicle::all();
+        return view('vehicle.list', compact('vehicle'));
     }
 
     /**
@@ -24,7 +25,7 @@ class VehicleController extends Controller
      */
     public function create()
     {
-        //
+        // TODO
     }
 
     /**
@@ -35,7 +36,7 @@ class VehicleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // TODO
     }
 
     /**
@@ -46,7 +47,7 @@ class VehicleController extends Controller
      */
     public function show(Vehicle $vehicle)
     {
-        //
+        return view('vehicle.show', compact('vehicle'));
     }
 
     /**
@@ -57,7 +58,7 @@ class VehicleController extends Controller
      */
     public function edit(Vehicle $vehicle)
     {
-        //
+        // TODO
     }
 
     /**
@@ -69,7 +70,7 @@ class VehicleController extends Controller
      */
     public function update(Request $request, Vehicle $vehicle)
     {
-        //
+        // TODO
     }
 
     /**
@@ -80,6 +81,6 @@ class VehicleController extends Controller
      */
     public function destroy(Vehicle $vehicle)
     {
-        //
+        // TODO
     }
 }

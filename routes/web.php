@@ -22,3 +22,6 @@ Route::delete('/users/{user}', 'UserController@destroy');
 
 Route::get('/tracks', 'TrackController@index');
 Route::get('/tracks/{track}', 'TrackController@show');
+
+Route::get('/vehicles', 'VehicleController@index');
+Route::get('/vehicles/{vehicle}', 'VehicleController@show');
