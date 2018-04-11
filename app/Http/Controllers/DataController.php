@@ -10,7 +10,7 @@ class DataController extends Controller
         return view('data.index');
     }
 
-    public function dumpAll() {
+    public function dump() {
         $headers = array(
             "Content-type" => "text/csv",
             "Content-Disposition" => "attachment; filename=racing-data.csv",
