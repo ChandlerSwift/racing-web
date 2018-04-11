@@ -25,3 +25,7 @@ Route::get('/tracks/{track}', 'TrackController@show');
 
 Route::get('/vehicles', 'VehicleController@index');
 Route::get('/vehicles/{vehicle}', 'VehicleController@show');
+
+Route::get('/data', 'DataController@index');
+Route::get('/data/dump', 'DataController@dump');
+Route::get('/data/apidoc', 'DataController@apidoc');

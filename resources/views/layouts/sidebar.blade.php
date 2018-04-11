@@ -41,6 +41,13 @@
             <li>
                 <a href="/users"><i class="fa fa-users fa-fw"></i> Users</a>
             </li>
+            <li>
+                <a href="#"><i class="fa fa-database fa-fw"></i> Data<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                            <li><a href="/data">Export Data</a></li>
+                            <li><a href="/data/apidoc">API Documentation</a></li>
+                        </ul>
+                </li>
         </ul>
     </div>
     <!-- /.sidebar-collapse -->
