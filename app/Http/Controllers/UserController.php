@@ -19,7 +19,8 @@ class UserController extends Controller
     public function index()
     {
         $users = User::all();
-        return view('user.list', compact('users'));
+        $page_title = "Users";
+        return view('user.list', compact('users', 'page_title'));
     }
 
     /**
@@ -42,7 +43,8 @@ class UserController extends Controller
     public function search($query)
     {
         $users = User::where('name', 'like', '%'.$query.'%')->get();
-        return view('user.search', compact('users', 'query'));
+        $page_title = "Search: $query";
+        return view('user.list', compact('users', 'page_title'));
     }
 
     /**
