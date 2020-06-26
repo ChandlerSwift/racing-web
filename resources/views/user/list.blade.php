@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-lg-12">
             <h1 class="page-header">{{ $page_title }}</h1>
-            <table width="100%" class="table table-striped table-bordered">
+            <table width="100%" class="table table-striped table-bordered datatable">
                 <thead>
                     <tr>
                         <th>Name</th>

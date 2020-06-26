@@ -65,7 +65,7 @@
 
     <script>
     $(document).ready(function() {
-        $('.race-datatable').DataTable({
+        $('.datatable').DataTable({
             responsive: true
         });
     });
