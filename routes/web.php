@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'DashboardController@index')->name('dashboard');
+Route::get('/', function () {
+    return view('dashboard')->with('races', \App\Race::all());
+});
 
 Auth::routes();
 
